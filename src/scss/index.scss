@@ -1,0 +1,242 @@
+@import './params.scss';
+
+// 顶部区域
+.top {
+    height: 12.4rem;
+    display: block;
+    background: url(../images/首页背景3.png) no-repeat center center / cover;
+
+    .banner {
+        position: relative;
+        text-align: center;
+
+        .company {
+            text-align: inherit;
+            margin-top: 0.85rem;
+            font-family: MicrosoftYaHei;
+            font-size: 0.3rem;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0.03rem;
+            color: #ffffff;
+        }
+
+        .sys-name {
+            text-align: inherit;
+            margin-top: 0.36rem;
+            font-family: MicrosoftYaHei;
+            font-size: 0.64rem;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0.06rem;
+            color: #ffffff;
+        }
+
+        .sep-bd {
+            width: 1.35rem;
+            height: 0.03rem;
+            margin: 0.34rem auto 0;
+        }
+
+        .desc {
+            margin: 0.46rem;
+            font-family: MicrosoftYaHei;
+            font-size: 0.26rem;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0.03rem;
+            color: #ffffff;
+        }
+
+        .bg-img {
+            margin: 0.87rem auto 0;
+            width: 5.7rem;
+            height: 4.61rem;
+            background: url(../images/index-bannerImg.png) no-repeat center center / 100% 100%;
+        }
+    }
+}
+
+// 主要区域
+main {
+    position: relative;
+
+    // 功能导航
+    .nav {
+        position: relative;
+        top: -1.3rem;
+        width: $sysContentWidthMore;
+        // height: 4.77rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .nav-box {
+            &:not(:nth-of-type(3n + 1)) {
+                //第3n+1个为新的一行的第一个，不需要左边距
+                margin-left: 0.24rem;
+            }
+
+            .img {
+                background: url(../images/首页-编辑.png) no-repeat center center / 100% 100%;
+            }
+        }
+    }
+
+    //考试声明
+    .statement {
+        margin: 0 auto;
+        margin-top: -0.5rem;
+        width: 6.8rem;
+
+        // height: 9.8rem;
+        .content {
+            margin-top: 0.83rem;
+            text-align: left;
+            font-family: MicrosoftYaHei;
+            font-size: 0.24rem;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 0.65rem;
+            letter-spacing: 0.01rem;
+            text-indent: 2em;
+            color: #666666;
+        }
+
+        .btn-more {
+            width: 1.81rem;
+            height: 0.61rem;
+            margin: 0.79rem auto 0;
+        }
+
+        .bg-img {
+            margin: 0.76rem auto 0;
+            width: 4.82rem;
+            height: 4.23rem;
+            background: url(../images/index-bg7.png) no-repeat center center / 100% 100%;
+        }
+    }
+
+    // 数据统计
+    .statistics {
+        overflow: hidden;
+        height: 12.5rem;
+        background: url(../images/index-bg2.png) no-repeat center center / 100% 100%;
+
+        &>.title-index {
+            margin-top: 2.64rem;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 5.88rem;
+            margin: 0 auto;
+            margin-top: 0.83rem;
+        }
+    }
+
+    // 考试公告
+    .notice {
+        width: 6.71rem;
+        margin: 0 auto;
+        margin-top: 1.11rem;
+        position: relative;
+
+        .filter {
+            margin: 0.7rem;
+            height: 0.38rem;
+            display: flex;
+            justify-content: center;
+
+            .btn-filter {
+                box-sizing: border-box;
+                height: 0.38rem;
+                background-color: #ffffff;
+                border-radius: 0.19rem;
+                border: solid 0.01rem #726fff;
+                color: #726fff;
+                padding: 0 1em;
+
+                &:not(:nth-of-type(1)) {
+                    margin-left: 0.2rem;
+                }
+
+                .active {
+                    background-color: #726fff;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        // 通告内容
+        .content-box{
+            &>.content {
+                width: inherit;
+                margin: 0 auto;
+                margin-top: 0.6rem;
+                border-bottom: 0.02rem solid #cfcfcf;
+    
+                &>.title {
+                    height: 0.28rem;
+                    font-family: MicrosoftYaHei;
+                    font-size: 0.28rem;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    line-height: 0.28rem;
+                    letter-spacing: 0.01rem;
+                    color: #373737;
+                }
+    
+                &>.items {
+                    margin: 0.5rem 0;
+                    font-family: MicrosoftYaHei;
+                    font-size: 0.24rem;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    line-height: 0.48rem;
+                    letter-spacing: 0.01rem;
+                    color: #666666;
+                }
+            }
+        }
+        
+
+        .modal-notice {
+            box-sizing: border-box;
+            width: 6.7rem;
+            background-color: #ffffff;
+            border: 0.01rem solid transparent;
+            border-radius: 0.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .more-title {
+                text-align: center;
+                margin-bottom:0.5rem ;
+                font-family: inherit;
+                font-size: 0.3rem;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 0.32rem;
+                letter-spacing: 0.01rem;
+                color: #373737;
+            }
+            .more-content{
+                padding: 0 0.4rem;
+                font-family: inherit;
+                font-size: 0.28rem;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0.01rem;
+                text-indent: 2em;
+                color: #666666;
+                line-height: 0.6rem;
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html> <!-- 声明是HTML文档类型-->
+<!---language='en'-代表当前的网页为英文-->
+<!---lang='ch'-代表当前的网页为中文-->
+<html lang='en'>
+
+<head>
+  <!--·定义当前网页的编码集--->
+  <meta charset='UTF-8'>
+  <!-- 防盗链避免 -->
+  <meta name='referrer' content='no-referrer'>
+  <!--·专门针对ie浏览器，代码以高版本的ie浏览器来显示网页·-->
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <!---针对移动端布局，开启理想视口·-->
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <!--·定义网页的·关键字-可以作为搜索引擎收录，有利于seo优化--->
+  <meta name='keywords' content='一个关键字，第二个关键字'>
+  <!--·定义网页的描述·-->
+  <meta name='description' content='一个网页描述'>
+  <!---定义网页的作者--->
+  <meta name='author' content='wl'>
+  <!---代码网页的标题，会显示在窗口栏上--->
+  <title>index</title>
+</head>
+
+<body>
+  <!-- 顶部 -->
+  <header>
+  </header>
+  <div class="top">
+    <div class="sep"></div>
+    <div class="banner">
+      <div class="company">蜗牛学苑</div>
+      <div class="sys-name">在线考试系统</div>
+      <div class="sep sep-bd"></div>
+      <div class="desc">支持超高同时在线、监考中心防作弊</div>
+      <div class="bg-img"></div>
+    </div>
+  </div>
+  <main>
+    <!-- 导航 -->
+    <div class="nav" id="navTestsType">
+      <div class="nav-box">
+        <div class="img" style="background-image: url();"></div>
+        <div class="title">正在考试</div>
+      </div>
+      <div class="nav-box">
+        <div class="img"></div>
+        <div class="title">正在考试</div>
+      </div>
+      <div class="nav-box">
+        <div class="img"></div>
+        <div class="title">正在考试</div>
+      </div>
+      <div class="nav-box">
+        <div class="img"></div>
+        <div class="title">正在考试</div>
+      </div>
+      <div class="nav-box">
+        <div class="img"></div>
+        <div class="title">正在考试</div>
+      </div>
+    </div>
+    <!-- 考试声明 -->
+    <div class="statement">
+      <div class="title-index">
+        EXAMINATION
+        <div class="items">严肃考试</div>
+      </div>
+      <div class="content">
+        适用于高校考试、认证考试、招聘考试等严格防作弊场景学员考前调试设备，本地备份答案及云端同步，断电断网续考人脸识别与权威数据库比对，AI监考中心三路音视频实时监考支持匿名判卷及分题分学员判卷，避免判卷过程的舞弊行为
+      </div>
+      <button class="btn btn-more">探索更多</button>
+      <div class="bg-img"></div>
+    </div>
+    <!-- 数据统计 -->
+    <div class="statistics">
+      <div class="title-index">
+        DATA STATISTICS
+        <div class="items">数据统计 </div>
+      </div>
+      <div class="content">
+        <div class="nav-box-data">
+          <div class="items" style="background-color: #726fff;">
+            <span id="counts">0</span>  <span class="subscript">道</span>
+            <div class="sub"></div>
+          </div>
+          <div class="title">
+            练习题数
+          </div>
+        </div>
+        <div class="nav-box-data">
+          <div class="items" style="background-color: #eb66ab;
+          ;">
+           <span id="learnDay">0</span>  <span class="subscript">天</span>
+            <div class="sub"></div>
+          </div>
+          <div class="title">
+            学习天数
+          </div>
+        </div>
+        <div class="nav-box-data">
+          <div class="items" style="background-color: #ab66eb;
+          ">
+          <span id="curScore">0</span><span class="subscript">分</span>
+            <div class="sub"></div>
+          </div>
+          <div class="title">
+            最近考试
+          </div>
+        </div>
+        <div class="nav-box-data">
+          <div class="items" style="background-color: #e366eb;
+          ">
+            <span id="avgScore">0</span><span class="subscript">分</span>
+            <div class="sub"></div>
+          </div>
+          <div class="title">
+            平均分数
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 公告 -->
+    <div class="notice">
+      <!-- 遮盖布 -->
+      <div class="model-cover" id="noticeCover"></div>
+      <!-- 弹窗显示 -->
+      <div class="modal-index  modal-notice" id="noticeModal" data-index="#noticeCover">
+        <div class="modal-content" id="noticeModalCon">
+          <div class="more-title">
+            2022年安徽公务员考试公告
+          </div>
+          <div class="more-content">
+            <p>关于推迟安徽省2022年度考试录用公务员和选调生笔试工作的公告 为认真贯彻落实安徽省新冠肺炎疫情防控部署要求,切实做好疫情防控工作,保障广大</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="title-index">
+        ANNOUNCEMENT
+        <div class="items">考试公告 </div>
+      </div>
+
+      <div class="filter">
+        <button class="btn-filter">全部</button>
+        <button class="btn-filter">最近</button>
+        <button class="btn-filter">一个月</button>
+      </div>
+      <!-- 公告列表 -->
+      <div class="content-box" id="noticeContent">
+        <div class="content">
+          <div class="title">
+            2022年安徽公务员考试公告
+          </div>
+          <div class="items">
+            关于推迟安徽省2022年度考试录用公务员和选调生笔试工作的公告 为认真贯彻落实安徽省新冠肺炎疫情防控部署要求,切实做好疫情防控工作,保障广大 <span class="noticeMore">...</span>
+          </div>
+        </div>
+        <div class="content">
+          <div class="title">
+            2022年安徽公务员考试公告
+          </div>
+          <div class="items">
+            关于推迟安徽省2022年度考试录用公务员和选调生笔试工作的公告 为认真贯彻落实安徽省新冠肺炎疫情防控部署要求,切实做好疫情防控工作,保障广大...
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <footer></footer>
+</body>
+
+</html>

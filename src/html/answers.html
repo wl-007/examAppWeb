@@ -1,0 +1,152 @@
+<!DOCTYPE html> <!-- 声明是HTML文档类型-->
+<!---language='en'-代表当前的网页为英文-->
+<!---lang='ch'-代表当前的网页为中文-->
+<html lang='en'>
+
+<head>
+    <!--·定义当前网页的编码集--->
+    <meta charset='UTF-8'>
+    <!-- 防盗链避免 -->
+    <meta name='referrer' content='no-referrer'>
+    <!--·专门针对ie浏览器，代码以高版本的ie浏览器来显示网页·-->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <!---针对移动端布局，开启理想视口·-->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!--·定义网页的·关键字-可以作为搜索引擎收录，有利于seo优化--->
+    <meta name='keywords' content='一个关键字，第二个关键字'>
+    <!--·定义网页的描述·-->
+    <meta name='description' content='一个网页描述'>
+    <!---定义网页的作者--->
+    <meta name='author' content='wl'>
+    <!---代码网页的标题，会显示在窗口栏上--->
+    <title>answer</title>
+</head>
+
+<body>
+    <div class="exam-header">
+        <div class="container">
+            <div class="left">
+                <div class="btn-back"></div>
+                <div class="desc" id="title">前端第一阶段阶段考试</div>
+            </div>
+            <div class="right">
+                <div class="info-box">
+                    <div class="num" id="score">20.0</div>
+                    <div class="desc">考试成绩</div>
+                </div>
+                <div class="info-box">
+                    <div class="num" id="durations">00:59:37</div>
+                    <div class="desc">考试时长</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <!-- 题目 -->
+        <div class="model-question" id="questionM">
+            <div class="question-title">
+                <div class="question-type">单选题</div>
+                <div class="question-desc">递接文件</div>
+            </div>
+            <div class="question-items">
+                <input type="radio" name="id" id="idA"> <label for="idA">A. 正面朝向对方</label>
+            </div>
+            <div class="question-items">
+                <input type="radio" name="id" id="idB"> <label for="idB">A. 正面朝向对方</label>
+            </div>
+            <div class="question-items">
+                <input type="radio" name="id" id="idC"> <label for="idC">A. 正面朝向对方</label>
+            </div>
+        </div>
+        <!-- 解析 -->
+        <div class="answer" id="answer">
+            <div class="answer-row">
+                <div class="icon error"></div>
+                <div class="text error">答错了</div>
+            </div>
+            <div class="answer-row">
+                <div class="text">考生答案：</div>
+                <div class="text error">B</div>
+            </div>
+            <div class="answer-row">
+                <div class="text">正确答案：</div>
+                <div class="text">A</div>
+            </div>
+        </div>
+        <div class="btn-box">
+            <button class="btn btn-exam" id="prevExe">上一题</button>
+            <button class="btn btn-exam" id="nextExe">下一题</button>
+        </div>
+    </div>
+    <!-- 试题底部 -->
+     <!-- 遮盖组件 -->
+     <div class="model-cover js-model-cover"></div>
+    <div class="exam-footer">
+        
+        <!-- 按钮区域 -->
+        <div class="exam-footer-top" >
+           
+            <div class="card-footer">
+                <div class="top">
+                    <div class="left">
+                        <div class="favorite" id="favorite">
+                            <div class="icon"></div>
+                            收藏
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <button class="btn btn-exam" id="goBackExamCen">返回考试中心</button>
+                    </div>
+                    <div class="right" id="moreQuestions">
+                        <div class="icon" id="jsIcon"></div>
+                        <span class="num" id="numIndex">1</span> /
+                        <span class="num" id="numCount">100</span>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <!-- 全部试题 -->
+        <div class="exam-footer-bot">
+            <div class="container" id="queContainer">
+                <div class="model-tests">
+                    <div class="tests-title">
+                        单选题（共10题，合计20分）
+                    </div>
+                    <div class="tests-content">
+                        <button class="model-tests-sub">7</button>
+                        <button class="model-tests-sub collection">7</button>
+                        <button class="model-tests-sub fulfill">7</button>
+                        <button class="model-tests-sub">7</button>
+                        <button class="model-tests-sub collection">7</button>
+                        <button class="model-tests-sub fulfill">7</button>
+                        <button class="model-tests-sub">7</button>
+                        <button class="model-tests-sub collection">7</button>
+                        <button class="model-tests-sub fulfill">7</button>
+                    </div>
+                </div>
+                <div class="model-tests">
+                    <div class="tests-title">
+                        单选题（共10题，合计20分）
+                    </div>
+                    <div class="tests-content">
+                        <button class="model-tests-sub">7</button>
+                        <button class="model-tests-sub collection">7</button>
+                        <button class="model-tests-sub fulfill">7</button>
+                        <button class="model-tests-sub">7</button>
+                        <button class="model-tests-sub collection">7</button>
+                        <button class="model-tests-sub fulfill">7</button>
+                        <button class="model-tests-sub">7</button>
+                        <button class="model-tests-sub collection">7</button>
+                        <button class="model-tests-sub fulfill">7</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 更多题目 -->
+
+
+</body>
+
+</html>

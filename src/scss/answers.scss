@@ -1,0 +1,117 @@
+@import './params.scss';
+
+.content {
+    width: $sysContentWidthMiddle;
+    margin: 0 auto;
+    // height: 10.55rem;
+    .btn-box{
+        width:$sysContentWidthMiddle ;
+        display: flex;
+        position: fixed;
+        z-index: 1;
+        bottom: 1.5rem;
+        justify-content: space-around;
+        .btn-exam{
+            width: 2.6rem;
+            height: 0.7rem;
+            background-color: #726fff;
+            border-radius: 0.35rem;
+        }
+    }
+
+}
+
+.exam-footer {
+    .exam-footer-top {
+        border-top: 0.02rem solid #d3d3d3;
+
+        &.open {
+            border-top: 0.02rem solid transparent;
+            border-bottom: 0.02rem solid #d3d3d3;
+        }
+    }
+
+    // 全部试题
+    .exam-footer-bot {
+        display: none;
+    }
+}
+// .model-cover{
+//     display: block;
+//     opacity: 0.3;
+// }
+// 解析界面头部改造
+.exam-header {
+    .container {
+        .right {
+            width: auto;
+            display: flex;
+            justify-content: space-between;
+
+            .info-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 0.6rem;
+                align-items: center;
+                margin-right: 0.2rem;
+
+                .num {
+                    font-family: MicrosoftYaHei;
+                    font-size: 0.3rem;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    line-height: 0.24rem;
+                    letter-spacing: 0rem;
+                    color: #eaff00;
+                }
+
+                .desc {
+                    font-family: MicrosoftYaHei;
+                    font-size: 0.24rem;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    line-height: 0.24rem;
+                    letter-spacing: 0rem;
+                    color: #c3c2fb;
+                }
+            }
+        }
+    }
+}
+
+// 解析框
+.answer {
+    width: 6.7rem;
+    margin-top: 0.5rem;
+    padding: 0.47rem 0 0.47rem 0.3rem;
+    background-color: #f4f4f4;
+    border-radius: 0.04rem;
+
+    .answer-row {
+        margin-bottom: 0.3rem;
+        display: flex;
+        align-items: center;
+        font-size: 0.3rem;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0rem;
+
+        .icon {
+            width: 0.26rem;
+            height: 0.24rem;
+            background-color: #ffffff;
+            margin-right: 0.04rem;
+            background: #ff4b50 url(../images/msg.png) no-repeat center center /100% 100%;
+            &.error {
+                background: #ff4b50 url(../images/msg.png) no-repeat center center /100% 100%;
+            }
+        }
+
+        .text {
+            &.error {
+                color: #ff4b50;
+            }
+        }
+    }
+}

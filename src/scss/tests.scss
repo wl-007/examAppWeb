@@ -1,0 +1,233 @@
+@import './params.scss';
+
+// 考试列表
+.examList {
+    background-color: $examBgColor;
+
+    .container {
+        width: $sysContentWidthMiddle;
+        margin: 0 auto;
+        min-height: 10.15rem;
+        .nav-crumbs {
+            height: 0.85rem;
+        }
+
+        .model-exam {
+            margin-bottom: 0.3rem;
+        }
+    }
+}
+
+// 开始考试
+.examStart {
+    height: 16.12rem;
+    background: url(../images/开始考试.png) no-repeat center center /100% 100%;
+
+    &>.logon {
+        width: 4rem;
+        height: 0.69rem;
+        margin: 1.5rem auto 0;
+        background-color: green;
+        display: flex;
+        background: url(../images/logo.png) no-repeat center center /100% 100%;
+
+    }
+
+    &>.container {
+        margin: 1rem auto 0;
+        width: 6.4rem;
+
+        &>.content {
+            margin: 1rem auto 0;
+            width: 5.9rem;
+            margin: 0 auto;
+            border: 0.01rem solid transparent;
+
+            .title {
+                margin: 0.67rem auto 0.73rem;
+                width: 3.07rem;
+                height: 0.3rem;
+                font-family: MicrosoftYaHei;
+                font-size: 0.3rem;
+                font-weight: bold;
+                font-stretch: normal;
+                letter-spacing: 0rem;
+                color: #333333;
+            }
+
+            &>.btn-start {
+                width: 5.9rem;
+                height: 0.8rem;
+                margin-bottom: 0.3rem;
+            }
+
+            &>.btn-back {
+                width: 5.9rem;
+                height: 0.8rem;
+                margin-bottom: 0.6rem;
+                border: solid 0.01rem #666666;
+                background-color: #ffffff;
+                color: #666666;
+            }
+        }
+    }
+
+}
+
+// 考试结束
+.examEnd {
+    overflow: hidden;
+    height: 13rem;
+    background: url(../images/开始考试.png) no-repeat center center /100% 100%;
+
+    &>.logo {
+        width: 4rem;
+        height: 0.69rem;
+        margin: 1.5rem auto 0;
+        background-color: green;
+        display: flex;
+        background: url(../images/logo.png) no-repeat center center /100% 100%;
+    }
+
+    &>.container {
+        margin: 1rem auto 0;
+        width: 6.4rem;
+
+        &>.content {
+            margin: 1rem auto 0;
+            width: 5.9rem;
+            margin: 0 auto;
+            border: 0.01rem solid transparent;
+            .img-head {
+                margin: 0.62rem auto 0;
+                width: 1.3rem;
+                height: 1.3rem;
+                background: url(../images/结束考试_03.png) no-repeat center center /100% 100%;
+                border-radius: 1rem;
+                -webkit-border-radius: 1rem;
+                -moz-border-radius: 1rem;
+                -ms-border-radius: 1rem;
+                -o-border-radius: 1rem;
+            }
+
+            &>.username {
+                margin: 0.25rem;
+                height: 0.35rem;
+                text-align: center;
+                font-family: MicrosoftYaHei-Bold;
+                font-size: 0.35rem;
+                font-weight: bold;
+                font-stretch: normal;
+                letter-spacing: 0rem;
+                color: #333333;
+            }
+
+            &>.score {
+                width: 1.4rem;
+                vertical-align: bottom;
+                height: 0.45rem;
+                text-align: right;
+                font-family: MicrosoftYaHei-Bold;
+                font-size: 0.6rem;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 0.45rem;
+                letter-spacing: 0rem;
+                color: #6966eb;
+                margin: 0.54rem auto 0;
+                position: relative;
+
+                .subscript {
+                    font-size: 0.3rem;
+                    margin-left: -0.5em;
+                }
+
+                &::before {
+                    content: "";
+                    width: 0.15rem;
+                    height: 0.15rem;
+                    background: url(../images/结束考试_07.png) no-repeat center center /100% 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: -0.2em;
+                }
+
+                &::after {
+                    content: "";
+                    width: 0.15rem;
+                    height: 0.15rem;
+                    background: url(../images/结束考试_07.png) no-repeat center center /100% 100%;
+                    position: absolute;
+                    top: 0;
+                    right: -0.2em;
+                    transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                }
+            }
+            &>.message{
+                margin-top: 0.3rem;
+                text-align: center;
+                font-size: 0.24rem;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 0.45rem;
+                letter-spacing: 0rem;
+                color: #333333;
+            }
+            &>.result{
+                width: 4rem;
+                height: 0.76rem;
+                // background-color: green;
+                margin: 0.61rem auto 0;
+                display: flex;
+                justify-content: space-between;
+                &>.desc-box{
+                    width: 3rem;
+                    height: inherit;
+                    text-align: center;
+                    // background-color: green;
+                    &>.info{
+                        font-family: MicrosoftYaHei;
+                        font-size: 0.36rem;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        line-height: 0.45rem;
+                        letter-spacing: 0rem;
+                        color: #333333;
+                    }
+                    &>.desc{
+                        font-size: 0.24rem;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        line-height: 0.45rem;
+                        letter-spacing: 0rem;
+                        color: #666666;
+                    }
+                }
+                &>.sep-result{
+                    width: 0.01rem;
+                    height:inherit;
+                    background-color: #d9d9d9;
+                }
+            }
+            &>.btn-jump {
+                width: 5.9rem;
+                height: 0.8rem;
+                margin-top: 0.67rem;
+                margin-bottom: 0.3rem;
+            }
+
+            &>.btn-back {
+                width: 5.9rem;
+                height: 0.8rem;
+                margin-bottom: 0.67rem;
+                border: solid 0.01rem #666666;
+                background-color: #ffffff;
+                color: #666666;
+            }
+        }
+    }
+}

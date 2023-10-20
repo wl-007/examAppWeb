@@ -1,0 +1,58 @@
+<!DOCTYPE html> <!-- 声明是HTML文档类型-->
+<!---language='en'-代表当前的网页为英文-->
+<!---lang='ch'-代表当前的网页为中文-->
+<html lang='en'>
+
+<head>
+    <!--·定义当前网页的编码集--->
+    <meta charset='UTF-8'>
+    <!-- 防盗链避免 -->
+    <meta name='referrer' content='no-referrer'>
+    <!--·专门针对ie浏览器，代码以高版本的ie浏览器来显示网页·-->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <!---针对移动端布局，开启理想视口·-->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!--·定义网页的·关键字-可以作为搜索引擎收录，有利于seo优化--->
+    <meta name='keywords' content='一个关键字，第二个关键字'>
+    <!--·定义网页的描述·-->
+    <meta name='description' content='一个网页描述'>
+    <!---定义网页的作者--->
+    <meta name='author' content='wl'>
+    <!---代码网页的标题，会显示在窗口栏上--->
+    <title>center</title>
+</head>
+
+<body class="center">
+    <!-- 公共头菜单 -->
+    <header></header>
+    <div class="sep"></div>
+    <div class="top">
+        <div class="user-box">
+           
+            <div class="head-img" id="headImg">
+                <input type="file" class="file" id="fileImg">
+            </div>
+            <div class="user-title" id="userTitle">用户名</div>
+            <div class="user-name" id="userState">未登录</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="box">
+            <div class="title"><span>姓名</span></div>
+            <input id="username" class="text" type="text">
+        </div>
+        <div class="box">
+            <div  class="title"><span>性别</span></div>
+            <div class="text">
+                <input class="radio" type="radio" id="male" value="male" name="gender" checked> <label class="radio" for="male">男</label>
+                <input class="radio" type="radio" id="female" value="female" name="gender"> <label class="radio" for="female">女</label>
+            </div>
+            
+        </div>
+        <button class="btn btn-center" id="login">保存</button>
+    </div>
+    <!-- 公告底部信息 -->
+    <footer></footer>
+</body>
+
+</html>

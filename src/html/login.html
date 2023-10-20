@@ -1,0 +1,52 @@
+<!DOCTYPE html> <!-- 声明是HTML文档类型-->
+<!---language='en'-代表当前的网页为英文-->
+<!---lang='ch'-代表当前的网页为中文-->
+<html lang='en'>
+<head>
+    <!--·定义当前网页的编码集--->
+    <meta charset='UTF-8'>
+    <!-- 防盗链避免 -->
+    <meta name='referrer' content='no-referrer'>
+    <!--·专门针对ie浏览器，代码以高版本的ie浏览器来显示网页·-->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <!---针对移动端布局，开启理想视口·-->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!--·定义网页的·关键字-可以作为搜索引擎收录，有利于seo优化--->
+    <meta name='keywords' content='一个关键字，第二个关键字'>
+    <!--·定义网页的描述·-->
+    <meta name='description' content='一个网页描述'>
+    <!---定义网页的作者--->
+    <meta name='author' content='wl'>
+    <!---代码网页的标题，会显示在窗口栏上--->
+    <title>login</title>
+</head>
+
+<body class="login">
+    <div class="container">
+        <div class="title">
+            Welcome To Login
+        </div>
+        <div class="title ch">
+            欢迎登录考试系统
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="title"><span>用户名</span></div>
+                <input value="13000000000" class="username" id="username" type="text">
+            </div>
+           
+            <div class="box">
+                <div class="title">
+                    <span>密码</span><span class="link" id="forget">忘记密码</span>
+                </div>
+                <div class="pwd-box">
+                    <input value="a123456" id="pwd" class="pwd" type="password">  
+                </div>
+            </div>
+            <button class="btn btn-login" id="login">立即登录</button>
+            <div class="link" id="reg">立即注册</div>
+        </div>
+    </div>
+</body>
+
+</html>

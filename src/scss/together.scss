@@ -1,0 +1,328 @@
+@import './params.scss';
+
+// 登录界面
+.login {
+    .container {
+        margin: 0 auto;
+        margin-top: 2.3rem;
+        width: $sysContentWidthMiddle;
+
+        // background-color: green;
+        .title {
+            text-align: center;
+            height: 0.52rem;
+            font-family: MicrosoftYaHei-Bold;
+            font-size: 0.48rem;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0rem;
+            color: #3d3d3d;
+
+            &.ch {
+                height: 0.31rem;
+                margin-top: 0.24rem;
+                font-size: 0.3rem;
+            }
+        }
+
+        .content {
+            width: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0.35rem;
+            overflow: hidden;
+
+            .box {
+                width: inherit;
+                position: relative;
+
+                input {
+                    padding: 0 1em;
+                }
+            }
+
+            .title {
+                width: inherit;
+                margin-top: 0.53rem;
+                display: flex;
+                justify-content: space-between;
+                height: 0.24rem;
+                font-family: MicrosoftYaHei;
+                font-size: 0.24rem;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 0.24rem;
+                letter-spacing: 0rem;
+                color: #666666;
+
+                &>.link {
+                    color: #fd1c1c;
+                }
+            }
+
+            input {
+                box-sizing: border-box;
+                margin-top: 0.18rem;
+                width: 100%;
+                height: 0.96rem;
+                border-radius: 0.16rem;
+                border: solid 0.01rem #cccccc;
+            }
+
+            .btn-login {
+                margin-top: 0.94rem;
+                width: 6.7rem;
+                height: 0.96rem;
+                border-radius: 0.16rem;
+                font-size: 0.32rem;
+            }
+
+            &>.link {
+                margin: 0 auto;
+                margin-top: 0.5rem;
+                font-family: MicrosoftYaHei;
+                font-size: 0.24rem;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0rem;
+                color: #726fff;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 1.88rem;
+    }
+}
+
+// 注册界面
+.register {
+    .container {
+        margin: 0 auto;
+        margin-top: 1rem;
+        width: $sysContentWidthMiddle;
+
+        // background-color: green;
+        .title {
+            text-align: center;
+            height: 0.52rem;
+            font-family: MicrosoftYaHei-Bold;
+            font-size: 0.48rem;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0rem;
+            color: #3d3d3d;
+
+            &.ch {
+                height: 0.31rem;
+                margin-top: 0.24rem;
+                font-size: 0.3rem;
+            }
+        }
+
+        .content {
+            width: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0.35rem;
+            overflow: hidden;
+
+            .box {
+                width: inherit;
+                position: relative;
+
+                input {
+                    padding: 0 1em;
+                }
+
+                .msg {
+                    color: #fd1c1c;
+                    font-size: 0.2rem;
+                    position: absolute;
+                    bottom: -0.3rem;
+                }
+            }
+
+            .title {
+                width: inherit;
+                margin-top: 0.53rem;
+                display: flex;
+                justify-content: space-between;
+                height: 0.24rem;
+                font-family: MicrosoftYaHei;
+                font-size: 0.24rem;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 0.24rem;
+                letter-spacing: 0rem;
+                color: #666666;
+
+                &>.link {
+                    color: #fd1c1c;
+                }
+            }
+
+            input {
+                box-sizing: border-box;
+                margin-top: 0.18rem;
+                width: 100%;
+                height: 0.96rem;
+                border-radius: 0.16rem;
+                border: solid 0.01rem #cccccc;
+            }
+
+            .btn-login {
+                margin-top: 0.94rem;
+                width: 6.7rem;
+                height: 0.96rem;
+                border-radius: 0.16rem;
+                font-size: 0.32rem;
+            }
+
+            &>.link {
+                margin: 0 auto;
+                margin-top: 0.5rem;
+                font-family: MicrosoftYaHei;
+                font-size: 0.24rem;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0rem;
+                color: #726fff;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 1.28rem;
+    }
+}
+
+// 个人中心
+.center {
+    .top {
+        overflow: hidden;
+        position: relative;
+        height: 4.4rem; // 3.58rem;
+        background: url(../images/个人中心_02.png) no-repeat center top/100% 3.58rem;
+
+        .user-box {
+            width: 2rem;
+            height: 2.7rem;
+            margin: 1.65rem auto 0;
+            // background-color: green;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            .file {
+                display: none;
+            }
+            .head-img {
+                width: 1.6rem;
+                height: 1.61rem;
+                background: #00c08c url(../images/个人中心_03.png) no-repeat center center /100% 100%;
+
+               
+            }
+
+            .user-title {
+                font-family: MicrosoftYaHei;
+                font-size: 0.32rem;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0rem;
+                color: #333333;
+            }
+
+            .user-name {
+                font-family: MicrosoftYaHei;
+                font-size: 0.24rem;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0rem;
+                color: #333333;
+            }
+        }
+    }
+
+    &>.content {
+        width: $sysContentWidthMiddle;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0.35rem;
+        overflow: hidden;
+        margin: 0 auto;
+
+        .box {
+            width: inherit;
+        }
+
+        .title {
+            width: inherit;
+            margin-top: 0.53rem;
+            display: flex;
+            justify-content: space-between;
+            height: 0.24rem;
+            font-family: MicrosoftYaHei;
+            font-size: 0.24rem;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 0.24rem;
+            letter-spacing: 0rem;
+            color: #666666;
+
+            &>.link {
+                color: #fd1c1c;
+            }
+        }
+
+        .text {
+            box-sizing: border-box;
+            margin-top: 0.18rem;
+            width: 100%;
+            height: 0.96rem;
+            border-radius: 0.16rem;
+            border: solid 0.01rem #cccccc;
+        }
+
+        div.text {
+            border: none;
+            line-height: 0.96rem;
+        }
+
+        .btn-center {
+            margin-top: 0.94rem;
+            width: 6.7rem;
+            height: 0.96rem;
+            border-radius: 0.16rem;
+            font-size: 0.32rem;
+        }
+
+        input {
+            text-indent: 1em;
+        }
+
+        .radio {
+            width: 0.29rem;
+            height: 0.29rem;
+            font-family: MicrosoftYaHei;
+            font-size: 0.3rem;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0rem;
+            color: #666666;
+            vertical-align: middle;
+        }
+
+        input.radio {
+            margin-right: 0.2rem;
+        }
+
+        label.radio {
+            margin-right: 0.4rem;
+        }
+    }
+}
